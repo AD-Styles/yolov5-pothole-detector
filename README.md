@@ -7,7 +7,7 @@
 
 ---
 
-## 📌 프로젝트 요약 (Executive Summary)
+## 📌 프로젝트 요약 (Project Overview)
 본 프로젝트는 선행 프로젝트([object-detection-fundamentals](https://github.com/AD-Styles/object-detection-fundamentals))에서 쌓은 IoU, NMS, 멀티태스크 탐지 모델의 원리를 토대로, **실무 수준의 SOTA 모델을 실제 문제에 적용**하는 것을 목표로 합니다. Roboflow의 도로 포트홀 데이터셋으로 YOLOv5를 커스텀 학습하고, 실제 도로 영상에서 포트홀을 실시간으로 탐지하는 전체 파이프라인을 구축하였습니다. 단순히 YOLOv5 명령어를 실행하는 것을 넘어, **YAML 설정부터 학습, 검증, 실제 영상 추론까지 전 과정을 직접 설계하고 실행**한 기록입니다.
 
 ---
