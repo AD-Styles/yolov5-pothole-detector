@@ -78,7 +78,7 @@
 
 ### 📊  핵심 지표 분석 및 엔지니어링 인사이트
 
-| 분석 포인트 &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; | 결과 해석 및 인사이트 |
+| 분석 포인트 &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; | 결과 해석 및 인사이트 |
 | :--- | :--- |
 | **과적합(Overfitting) 없는 수렴** | `box_loss`와 `obj_loss`가 100 Epoch 내내 튀는 구간 없이 안정적으로 우하향했음. scratch 학습(사전학습 없음)임에도 665장의 소규모 데이터셋에서 깔끔한 수렴이 나온 것은 YOLO 아키텍처의 강력함과 세팅의 적절함을 증명. |
 | **Class Loss = 0 의 비밀** | 본 프로젝트는 오직 포트홀 단일 클래스(`nc=1`)만을 탐지. 따라서 객체 여부(Objectness) 판단에만 집중하고 '무슨 객체인지' 분류(Classification)할 필요가 없어 `cls_loss`가 발생하지(0) 않음. 이를 통해 추론 연산의 효율을 극대화. |
