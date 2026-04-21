@@ -22,14 +22,14 @@
 ---
 
 ## 1. 프로젝트 구조
-    ├── src/
-    │   └── train_yolo.py        # YOLOv5 전체 학습 파이프라인 (clone → download → train → val → test)
     ├── results/
     │   └── yolo_results.png     # YOLOv5 학습 결과 그래프 (Loss, mAP 곡선)
-    ├── .gitignore
-    ├── LICENSE
-    ├── requirements.txt
-    └── README.md
+    ├── src/
+    │   └── train_yolo.py        # YOLOv5 전체 학습 파이프라인 (clone → download → train → val → test)
+    ├── .gitignore               # 불필요한 파일 업로드 방지
+    ├── LICENSE                  # MIT License (AD-Styles)
+    ├── README.md                # 프로젝트 리포트
+    └── requirements.txt         # 라이브러리 설치 목록
 
 > **Note**: BBox 연산(IoU, NMS) 및 Single Object Detector 구현 코드는
 > 선행 프로젝트 [object-detection-fundamentals](https://github.com/AD-Styles/object-detection-fundamentals)를 참고해주세요:)
