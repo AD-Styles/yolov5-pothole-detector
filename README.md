@@ -32,7 +32,7 @@
     └── README.md
 
 > **Note**: BBox 연산(IoU, NMS) 및 Single Object Detector 구현 코드는
-> 선행 프로젝트 [object-detection-fundamentals](https://github.com/AD-Styles/object-detection-fundamentals)를 참고하세요.
+> 선행 프로젝트 [object-detection-fundamentals](https://github.com/AD-Styles/object-detection-fundamentals)를 참고해주세요:)
 
 ---
 
