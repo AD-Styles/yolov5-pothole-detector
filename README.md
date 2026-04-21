@@ -80,17 +80,7 @@
 
 ---
 
-## 4. 향후 과제 (Future Work)
-현재 YOLOv5s 모델은 **scratch 학습 + 단일 클래스** 환경에서 검증되었습니다. 실무 적용을 위해 다음 방향으로 확장할 계획입니다.
-
-- **Transfer Learning 적용**: COCO Pretrained 가중치로 파인튜닝하여 소규모 데이터셋에서의 성능 상한선 탐색
-- **모델 경량화**: YOLOv5n(nano) 또는 YOLOv8로 전환하여 엣지 디바이스 실시간 추론 최적화
-- **다중 도로 결함 탐지**: 포트홀 외 크랙, 노면 파손 등 다중 클래스로 확장
-- **ONNX 변환**: TorchScript/ONNX Export를 통한 서비스 배포 파이프라인 구축
-
----
-
-## 5. 💡 회고록 (Retrospective)
+## 💡 회고록 (Retrospective)
 이번 프로젝트에서는 선행 프로젝트에서 직접 구현했던 IoU, NMS, 멀티태스크 Loss의 원리를 머릿속에 쌓아둔 상태에서 YOLOv5를 사용했습니다. 그 차이는 명확했습니다.
 
 - **YAML 설정이 다르게 읽혔습니다**: `nc: 1`, `anchors`, `depth_multiple` 등의 설정값이 단순한 숫자가 아니라, 선행 프로젝트에서 직접 구현했던 개념들의 실무적 추상화임을 이해할 수 있었습니다. `anchors`가 선행 프로젝트에서 배운 Anchor Box 개념 그대로임을, `nc`가 Detection Head의 출력 채널 수임을 바로 연결할 수 있었습니다.
