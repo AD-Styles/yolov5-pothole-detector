@@ -41,15 +41,13 @@
     └── README.md
 
 > **Note**: BBox 연산(IoU, NMS) 및 Single Object Detector 구현 코드는
-> 선행 프로젝트 [object-detection-fundamentals](https://github.com/AD-Styles/object-detection-fundamentals)를 참고하세요.
+> 선행 프로젝트 [object-detection-fundamentals](https://github.com/AD-Styles/object-detection-fundamentals)를 참고해주세요.
 
 ---
 
 ## 3. 핵심 구현 상세 (Implementation Details)
 
 ### 🔹 Stage 1. BBox 연산 & NMS — 핵심 알고리즘 직접 구현
-
-객체 탐지 파이프라인의 가장 근본이 되는 연산들을 외부 라이브러리 없이 직접 구현했습니다.
 
 **BBox 포맷 4종 구현**
 | 포맷 | 표현 방식 | 사용처 |
