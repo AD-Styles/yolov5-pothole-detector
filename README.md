@@ -47,7 +47,7 @@
 - Epochs: 100 / Batch: 32 / Image size: 640
 - Weights: scratch (사전학습 없이 처음부터 학습)
 
-**`train_yolo.py` 실행 단계**:
+**train_yolo.py 실행 단계**:
 ```
 --mode clone     → YOLOv5 레포 클론 및 requirements 설치
 --mode download  → Roboflow 포트홀 데이터셋 다운로드 + YAML 자동 설정
